@@ -3,3 +3,4 @@ lua-5.3.6.tar.gz
 *.out
 *.o
 core
+.vscode

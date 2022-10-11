@@ -71,7 +71,6 @@ static const struct luaL_Reg mylib_m[] = {
     {"setAge", SetAge},   {"__tostring", tostring}, {NULL, NULL}};
 
 extern int luaopen_mylib(lua_State *L) {
-  lua_tolstring lua_rotate lua_checkstack;
   luaL_newmetatable(L, "Student"); //创建元表
   lua_pushvalue(L, -1);            //复制元表
   lua_setfield(L, -2, "__index");  //元表.__index = 元表
